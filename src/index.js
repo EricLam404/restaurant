@@ -1,5 +1,10 @@
 import './style.css';
 
+const context = document.createElement('div')
+context.setAttribute('id', 'content');
+
+document.body.appendChild(context);
+
 function main() {
     const element = document.createElement('div');
     element.classList.add('box');
@@ -29,7 +34,6 @@ function textBody(){
 function loadPage(){
     const content = document.getElementById('content');
 
-    console.log(content);
     content.appendChild(main());
     console.log(content);
 }
