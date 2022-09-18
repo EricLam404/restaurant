@@ -8,9 +8,19 @@ document.body.appendChild(context);
 function main() {
     const element = document.createElement('div');
     element.classList.add('box');
+
+    const body = document.getElementById('content')
     
+    body.appendChild(header());
     element.appendChild(welcomeText());
     element.appendChild(textBody());
+
+    return element;
+}
+
+function header(){
+    const element = document.createElement('div');
+    element.classList.add('header');
 
     return element;
 }
