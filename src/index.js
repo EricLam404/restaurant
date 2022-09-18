@@ -11,17 +11,31 @@ function main() {
 
     const body = document.getElementById('content')
     
-    body.appendChild(header());
+    body.appendChild(navbar());
     element.appendChild(welcomeText());
     element.appendChild(textBody());
 
     return element;
 }
 
-function header(){
+function navbar(){
     const element = document.createElement('div');
-    element.classList.add('header');
+    element.classList.add('navbar');
 
+    const home = document.createElement('a');
+    const menu = document.createElement('a');
+    const contact = document.createElement('a');
+
+    home.href = "#home";
+    menu.href = "#menu";
+    contact.href = "#contact";
+
+    home.textContent = "Home";
+    menu.textContent = "Menu";
+    contact.textContent = "Contact";
+
+
+    element.append(home, menu, contact);
     return element;
 }
 
