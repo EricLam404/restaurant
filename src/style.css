@@ -17,7 +17,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    margin-left: 
 }
   
 .navbar a {
@@ -30,6 +29,21 @@ body {
 }
 
 .navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.navbar .home  {
+    background: #ddd;
+    color: black;
+}
+
+.navbar .menu {
+    background: #ddd;
+    color: black;
+}
+
+.navbar .contact {
     background: #ddd;
     color: black;
 }

@@ -26,17 +26,26 @@ function navbar(){
     const menu = document.createElement('a');
     const contact = document.createElement('a');
 
-    home.href = "#home";
-    menu.href = "#menu";
-    contact.href = "#contact";
+    home.classList.add("tab", "home");
+    menu.classList.add("tab");
+    contact. classList.add("tab");
 
     home.textContent = "Home";
     menu.textContent = "Menu";
     contact.textContent = "Contact";
 
-
+    addOnClick();
     element.append(home, menu, contact);
     return element;
+}
+
+function addOnClick(){
+    let tabs = document.querySelectorAll(".navbar");
+    console.log(document.querySelectorAll(".navbar"));
+    console.log(tabs);
+    tabs.forEach(tab => {
+        console.log(tab);
+    });
 }
 
 function welcomeText(){
@@ -59,7 +68,6 @@ function loadPage(){
     const content = document.getElementById('content');
 
     content.appendChild(main());
-    console.log(content);
 }
 
 loadPage();
