@@ -33,17 +33,7 @@ body {
     color: black;
 }
 
-.navbar .home  {
-    background: #ddd;
-    color: black;
-}
-
-.navbar .menu {
-    background: #ddd;
-    color: black;
-}
-
-.navbar .contact {
+.navbar .selected  {
     background: #ddd;
     color: black;
 }

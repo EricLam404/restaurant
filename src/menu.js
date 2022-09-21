@@ -1,5 +1,9 @@
+import createNavbar from "./components";
+
 function loadMenu(){
     removeChildren();
+    createNavbar();
+
 }
 
 

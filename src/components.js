@@ -15,9 +15,9 @@ function navbar(){
     const menu = document.createElement('a');
     const contact = document.createElement('a');
 
-    home.classList.add("tab", "home");
-    menu.classList.add("tab");
-    contact. classList.add("tab");
+    home.classList.add("tab", "one");
+    menu.classList.add("tab", "two");
+    contact. classList.add("tab", "three");
 
     home.textContent = "Home";
     menu.textContent = "Menu";
@@ -36,6 +36,7 @@ function addOnClick(){
 
 function changeTab(e){
     let tab = e.target.textContent;
+
     if(tab === "Home"){
         loadHome();
     }
